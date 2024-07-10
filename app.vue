@@ -1,9 +1,10 @@
 <template>
-  <h1>Dit is de titel</h1>
-  <pwc-chip type="removable">hallo</pwc-chip>
-    <pwc-button appearance="primary">Dit is een button</pwc-button>
+  <div>
+    <h1>Dit is de titel</h1>
+    <p><pwc-chip type="removable">hallo</pwc-chip></p>
+    <p><pwc-button appearance="primary">Dit is een button</pwc-button></p>
 
-    <pwc-card class="card-left" pwc-densed pwc-contrast legacy="false">
+    <pwc-card class="card-left" pwc-densed pwc-levitation-3 legacy="false">
       <pwc-card-header>Example Contrast Card</pwc-card-header>
       <pwc-card-content>
         <p>
@@ -20,11 +21,16 @@
         </pwc-button>
       </pwc-card-footer>
     </pwc-card>
+  </div>
+  
 </template>
 
+<style>
+    @import '@politie/pwc-webcomponents/style.css';
+</style>
+
 <script setup lang="ts">
-import { defineCustomElements } from '@politie/pwc-webcomponents/loader/index.es2017.js'
-console.log(defineCustomElements)
-await defineCustomElements()
+// import { defineCustomElements } from '@politie/pwc-webcomponents/loader/index'
+// defineCustomElements()
 </script>
 
