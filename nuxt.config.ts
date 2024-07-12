@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   plugins: [
     { src: '~/plugins/pwc.js', mode: 'client' }
   ],
-
+  css: ['@politie/pwc-webcomponents/style.css'],
   vue: {
       compilerOptions: {
         isCustomElement: (tag) => tag.includes('pwc-'),
